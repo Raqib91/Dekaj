@@ -12,6 +12,7 @@
  1. Java
  2. Maven
  3. Spring MVC
+ 4. JSP
  
  ## Database
  1. MySQL
