@@ -3,7 +3,7 @@ This is an online job portal. Feel free to visit it. [Click here](https://dekaj.
 
 ### Technologies used to build this web application are:
  
-* **Frontend**
+* Frontend
 ..* HTML
 ..* CSS
 ..* Javascript
