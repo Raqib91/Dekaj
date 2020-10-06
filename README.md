@@ -1,6 +1,7 @@
+<p align="center">
 # Dekaj
 This is an online job portal. Feel free to visit it. [Click here](https://dekaj.herokuapp.com)
-
+</p>
 ### Technologies used to build this web application are:
 
 #### Frontend
