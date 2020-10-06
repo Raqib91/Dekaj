@@ -3,18 +3,18 @@ This is an online job portal. Feel free to visit it. [Click here](https://dekaj.
 
 ### Technologies used to build this web application are:
  
-* Frontend
-..* HTML
-..* CSS
-..* Javascript
-..* JQuery
-..* Bootstrap
+#### Frontend
+* HTML
+* CSS
+* Javascript
+* JQuery
+* Bootstrap
 
-* **Backend**
-..* Java
-..* Maven
-..* Spring MVC
-..* JSP
+#### Backend
+* Java
+* Maven
+* Spring MVC
+* JSP
  
-* **Database**
-..* MySQL
+#### Database
+* MySQL
