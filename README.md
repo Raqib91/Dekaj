@@ -2,7 +2,7 @@
 This is an online job portal. Feel free to visit it. [Click here to visit](https://dekaj.herokuapp.com)
 Technologies used to build this web application are:
  
- ## Frontend
+ ### Frontend
  1. HTML
  2. CSS
  3. Javascript
