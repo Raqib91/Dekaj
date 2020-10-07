@@ -121,6 +121,55 @@ li:hover {
 	color: red;
 }
 
+.o2 {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	position: absolute;
+	display: none;
+}
+
+.o2 span {
+	float: right;
+	margin: 20px;
+	margin-right: 50px;
+}
+
+.o2 span:hover {
+	cursor: pointer;
+}
+
+.vd {
+	height: 80px;
+}
+
+.o2 a {
+	margin-bottom: 20px;
+	color: #fff;
+	display: block;
+}
+
+.o2 a:hover {
+	transform: scale(1.1);
+	transition: 500ms;
+	text-decoration: none;
+	color: #fff;
+}
+
+.mnbar {
+	color: #000;
+	display: none;
+}
+
+.mnbar:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
 	.mn {
 		padding: 5px 50px;
@@ -149,7 +198,7 @@ li:hover {
 	}
 	.mn ul li a {
 		margin: 0 7px;
-		font-size: 12px;
+		font-size: 15px;
 	}
 	.btn {
 		font-size: 12px;
@@ -166,9 +215,11 @@ li:hover {
 	.mn .logo {
 		font-size: 20px;
 	}
-	.mn ul li a {
-		margin: 0 5px;
-		font-size: 12px;
+	.mn ul {
+		display: none;
+	}
+	.mnbar {
+		display: block;
 	}
 	.btn {
 		font-size: 12px;
@@ -214,6 +265,21 @@ li:hover {
 					</form>
 				</li>
 			</ul>
+			
+			<span class="mnbar"><i class="fa fa-bars"></i></span>
+			
+			<div class="o2">
+				<span class="hd">x</span>
+				<div class="vd"></div>
+				<center>
+					<a href="allEmployee.jsp">Home</a>
+					<a href="myJob.jsp">My Jobs</a>
+					<a href="createJob.jsp">Create Job</a>
+					<form action="logout" method="post">
+						<button type="submit" class="btn btn-danger lg">Logout</button>
+					</form>
+				</center>
+			</div>
 
 		</div>
 
@@ -395,6 +461,24 @@ li:hover {
 			</div>
 		</div>
 	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(function() {
+
+			$('.mnbar').on('click', function(){
+				$('.o2').slideDown(800);
+			});
+
+			$('.hd').on('click', function(){
+				$('.o2').slideUp(800);
+			});
+
+		});
+	</script>
 
 </body>
 </html>

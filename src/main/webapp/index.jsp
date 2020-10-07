@@ -280,6 +280,54 @@ li:hover {
 	font-size: 100px;
 }
 
+.o2 {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	position: absolute;
+	display: none;
+}
+
+.o2 span {
+	float: right;
+	margin: 20px;
+	margin-right: 50px;
+}
+
+.o2 span:hover {
+	cursor: pointer;
+}
+
+.vd {
+	height: 80px;
+}
+
+.o2 a {
+	text-decoration: none;
+	margin-bottom: 20px;
+	color: #fff;
+	display: block;
+}
+
+.o2 a:hover {
+	transform: scale(1.1);
+	transition: 500ms;
+}
+
+.mnbar {
+	color: #fff;
+	display: none;
+}
+
+.mnbar:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
 	.mn {
 		padding: 5px 50px;
@@ -370,9 +418,15 @@ li:hover {
 	.mn .logo {
 		font-size: 20px;
 	}
-	.mn ul li a {
-		margin: 0 5px;
-		font-size: 12px;
+	.mn ul {
+		display: none;
+	}
+/* 	.mn ul li a { */
+/* 		margin: 0 5px; */
+/* 		font-size: 12px; */
+/* 	} */
+	.mnbar {
+		display: block;
 	}
 	.back {
 		align-items: center;
@@ -439,8 +493,20 @@ li:hover {
 				<li><a href="contact.jsp">Contact</a></li>
 				<li><a href="login.jsp">Login</a></li>
 				<li><a href="" data-toggle="modal" data-target="#myModal">Signup</a></li>
-
 			</ul>
+			
+			<span class="mnbar"><i class="fa fa-bars"></i></span>
+			
+			<div class="o2">
+				<span class="hd">x</span>
+				<div class="vd"></div>
+				<center>
+					<a href="browseJob.jsp">Browse Jobs</a>
+					<a href="about.jsp">About</a>
+					<a href="contact.jsp">Contact</a>
+					<a href="login.jsp">Login</a>
+				</center>
+			</div>
 
 		</div>
 
@@ -616,6 +682,14 @@ li:hover {
 
 			//Header content animation
 			$('.header-content').slideDown(1500);
+
+			$('.mnbar').on('click', function(){
+				$('.o2').slideDown(800);
+			});
+
+			$('.hd').on('click', function(){
+				$('.o2').slideUp(800);
+			});
 
 		});
 	</script>
