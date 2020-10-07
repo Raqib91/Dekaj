@@ -99,7 +99,7 @@ li:hover {
 	transition: 500ms;
 }
 
-.mn.sticky .logo, .mn.sticky ul li a {
+.mn.sticky .logo, .mn.sticky span, .mn.sticky ul li a {
 	color: #000;
 }
 
