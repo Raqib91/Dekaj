@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Create Employee Account</title>
+<link rel="icon" href="images/ticon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
